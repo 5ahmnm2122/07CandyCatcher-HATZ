@@ -4,31 +4,22 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public bool canMove = true;
-    public float maxPos;
-    public float moveSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        Debug.Log("Hello World");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
+        print(Input.GetAxis("Horizontal"));
+
+        // Debug.Log("Update works");
+        /*if (Input.GetKey(KeyCode.D))
         {
             Debug.Log("Right Arrow is held down");
-            // Move();
-        }
+        } */
     }
-
-    /* private void Move()
-    {
-        float inputX = Input.GetAxis("Horizontal");
-
-
-    }
-    */
 }
