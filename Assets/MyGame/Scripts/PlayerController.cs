@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject player;
+    public float moveSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -16,10 +18,10 @@ public class PlayerController : MonoBehaviour
     {
         print(Input.GetAxis("Horizontal"));
 
-        // Debug.Log("Update works");
-        /*if (Input.GetKey(KeyCode.D))
-        {
-            Debug.Log("Right Arrow is held down");
-        } */
+        /* float inputX = Input.GetAxis("Horizontal");
+
+        Debug.Log(inputX);
+
+        player.transform.position = player.transform.position + Vector3.right * inputX * moveSpeed * Time.deltaTime; */
     }
 }
