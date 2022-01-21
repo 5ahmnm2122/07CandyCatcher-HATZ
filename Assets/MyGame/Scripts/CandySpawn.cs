@@ -16,7 +16,7 @@ public class CandySpawn : MonoBehaviour
     Vector2 GetSpawnPoint()
     {
         float x = Random.Range(-420, 420);
-        return new Vector2(x, 8);
+        return new Vector2(x, 375);
     }
 
     void SpawnCandy()
