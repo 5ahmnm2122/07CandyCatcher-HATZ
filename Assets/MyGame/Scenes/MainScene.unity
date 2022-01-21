@@ -793,9 +793,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb46af34e56ff4459b5148089f303dea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canMove: 1
-  maxPos: 0
-  moveSpeed: 0
+  player: {fileID: 790406269}
+  moveSpeed: 1
 --- !u!4 &1594950004
 Transform:
   m_ObjectHideFlags: 0
