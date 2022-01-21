@@ -5,6 +5,7 @@ using UnityEngine;
 public class CandySpawn : MonoBehaviour
 {
     public GameObject candyGood;
+    public GameObject canvas;
 
     // Start is called before the first frame update
     void Start()
@@ -15,13 +16,14 @@ public class CandySpawn : MonoBehaviour
 
     Vector2 GetSpawnPoint()
     {
-        float x = Random.Range(-420, 420);
-        return new Vector2(x, 375);
+        float x = Random.Range(-7, 7);
+        return new Vector2(x, 10);
     }
 
     void SpawnCandy()
     {
-        Instantiate(candyGood, GetSpawnPoint(), Quaternion.identity);
+        GameObject newCandy = Instantiate(candyGood, GetSpawnPoint(), Quaternion.identity);
+        newCandy.transform.parent = canvas.transform;
     }
 
     // Update is called once per frame

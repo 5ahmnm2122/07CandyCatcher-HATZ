@@ -1015,6 +1015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   candyGood: {fileID: 411064913795196293, guid: d2194e69d87b847b5babfc6ca0311321, type: 3}
+  canvas: {fileID: 1439397280}
 --- !u!4 &1688605767
 Transform:
   m_ObjectHideFlags: 0
