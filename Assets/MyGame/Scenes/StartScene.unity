@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 809087472}
   - component: {fileID: 809087471}
   m_Layer: 0
-  m_Name: MenuController
+  m_Name: MenuController_Script
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -689,6 +689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e657f8ef6ee49718c2fd83f43f1533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerName: {fileID: 601912187}
 --- !u!4 &809087472
 Transform:
   m_ObjectHideFlags: 0
