@@ -15,6 +15,7 @@ public class CandyCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        count = 0;
         score.text = "Eingesammelt: " + count.ToString();
     }
 
