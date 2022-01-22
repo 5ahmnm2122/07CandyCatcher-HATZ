@@ -1,33 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CandyCollision : MonoBehaviour
 {
-    public float count;
-    public GameObject candy;
+    public static int count;
+    public Text score;
+    public GameObject heartOne;
+    public GameObject heartTwo;
+    public GameObject heartThree;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        score.text = "Eingesammelt: " + count.ToString();
     }
 
-    /* void OnCollisionEnter(Collision candy)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (candy.gameObject.tag == "Candy")
+        if (collision.gameObject.tag == "Candy")
         {
-            // Destroy(gameObject, .5f);
-            //count++;
-            Debug.Log("Yeah, that was definitely a collison!");
+            Debug.Log("And that's the good trigger.");
+            count++;
+            score.text = "Eingesammelt: " + count.ToString();
         }
-    } */
 
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Candy")
+        if (collision.gameObject.tag == "Missile")
         {
-            Debug.Log("And that's the trigger.");
+            Debug.Log("BOOM!");
+
+            if (heartOne.activeSelf)
+            {
+                heartOne.SetActive(false);
+            }
+            else if (heartTwo.activeSelf)
+            {
+                heartTwo.SetActive(false);
+            }
+            else
+            {
+                heartThree.SetActive(false);
+                SceneManager.LoadScene("EndSceneLost");
+            }
         }
     }
 

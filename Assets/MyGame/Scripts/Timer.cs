@@ -23,7 +23,8 @@ public class Timer : MonoBehaviour
 
         if (timer < 0)
         {
-            SceneManager.LoadScene("EndSceneLost");
+            SceneManager.LoadScene("EndScene");
+            Name.playerScoreString = CandyCollision.count.ToString();
         }
     }
 }
