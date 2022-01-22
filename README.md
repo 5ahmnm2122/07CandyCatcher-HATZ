@@ -2,7 +2,7 @@
 
 __PROJECT DESCRIPTION:__
 
-This project is a candy catcher game with a start screen to put in your name and an end screen to celebrate when you've won.
+- This project is a candy catcher game with a start screen to put in your name and an end screen to celebrate when you've won.
 
 __DEVELOPMENT PLATFORM:__
 
@@ -11,7 +11,7 @@ __DEVELOPMENT PLATFORM:__
 
 __TARGET PLATFORM:__
 
-WebGL
+- WebGL
 
 __VISUALS:__
 
@@ -29,7 +29,7 @@ __THIRD PARTY MATERIAL:__
 
 __PROJECT STATE:__
 
-100%
+- 100%
 
 __LESSONS LEARNED:__
 
