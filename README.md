@@ -23,6 +23,9 @@ __THIRD PARTY MATERIAL:__
 - City Backround: https://www.vectorstock.com/royalty-free-vector/modern-city-at-night-cartoon-background-vector-23716650
 - Confetti Backround: https://www.vectorstock.com/royalty-free-vector/gold-glitter-confetti-texture-on-a-black-vector-13448143
 - Fire Background: https://www.pinterest.com/pin/113293746849618275/?d=t&mt=login
+- Money Bag: https://www.seekpng.com/ipng/u2a9o0i1w7w7r5w7_transparent-stock-money-bag-clipart-money-bag-clipart/
+- Missile: https://www.kissclipart.com/mssil-png-clipart-missile-clip-art-p94lv6/
+- Iron Man Heart: https://pixels.com/featured/iron-man-heart-arc-reactor-duong-ngoc-son.html?product=puzzle&puzzleType=puzzle-18-24
 
 __PROJECT STATE:__
 
