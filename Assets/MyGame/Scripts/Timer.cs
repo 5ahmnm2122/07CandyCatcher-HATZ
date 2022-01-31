@@ -17,7 +17,7 @@ public class Timer : MonoBehaviour
     void Update() // Der Timer zählt von 60 Sekunden abwärts.
     {
         timer -= Time.deltaTime;
-        timeText.text = timer.ToString();
+        timeText.text = timer.ToString("F0");
 
         if (timer < 0) // Wenn er 0 erreicht endet das Spiel
         {
