@@ -1217,6 +1217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerNameText: {fileID: 1235454416}
+  playerScoreText: {fileID: 0}
 --- !u!4 &1885404812
 Transform:
   m_ObjectHideFlags: 0
@@ -1520,7 +1521,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac769d04266c547c9a1248bc629382ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 0
   score: {fileID: 1097628790}
   heartOne: {fileID: 1110345744}
   heartTwo: {fileID: 1992758501}
