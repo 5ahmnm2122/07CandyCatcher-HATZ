@@ -22,7 +22,7 @@ public class Timer : MonoBehaviour
         if (timer < 0) // Wenn er 0 erreicht endet das Spiel
         {
             SceneManager.LoadScene("EndScene");
-            Name.playerScoreString = CandyCollision.count.ToString();
+            Score.playerScoreString = CandyCollision.count.ToString();
         }
     }
 }
