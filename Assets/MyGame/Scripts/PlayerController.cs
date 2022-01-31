@@ -8,18 +8,13 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Hello World");
+
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() // Wenn die Pfeiltasten oder A-D-Tasten verwendet werden bewegt sich der Spieler
     {
-        // print(Input.GetAxis("Horizontal"));
-
         float inputX = Input.GetAxis("Horizontal");
-
-        // Debug.Log(inputX);
-
         player.transform.position = player.transform.position + Vector3.right * inputX * moveSpeed * Time.deltaTime;
     }
 }

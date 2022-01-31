@@ -18,15 +18,9 @@ public class CandySpawn : MonoBehaviour
         return new Vector2(x, 10);
     }
 
-    void SpawnCandy()
+    void SpawnCandy() // Ein Geldsack wird an zufällig ausgewählten Orten gespawned
     {
         GameObject newCandy = Instantiate(candyGood, GetSpawnPoint(), Quaternion.identity);
         newCandy.transform.parent = canvas.transform;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

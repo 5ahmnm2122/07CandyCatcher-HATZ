@@ -10,15 +10,9 @@ public class Name : MonoBehaviour
     public Text playerScoreText;
 
     // Start is called before the first frame update
-    void Start()
+    void Start() // Der Name und das Ergebnis des Spieles wird an diese Methode übergeben und kann damit in allen Szenen verwendet werden
     {
         playerNameText.text = playerNameString;
         playerScoreText.text = playerScoreString;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

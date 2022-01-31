@@ -14,12 +14,12 @@ public class Timer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() // Der Timer zählt von 60 Sekunden abwärts.
     {
         timer -= Time.deltaTime;
         timeText.text = timer.ToString();
 
-        if (timer < 0)
+        if (timer < 0) // Wenn er 0 erreicht endet das Spiel
         {
             SceneManager.LoadScene("EndScene");
             Name.playerScoreString = CandyCollision.count.ToString();

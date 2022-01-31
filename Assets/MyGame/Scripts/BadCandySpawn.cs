@@ -18,15 +18,9 @@ public class BadCandySpawn : MonoBehaviour
         return new Vector2(x, 10);
     }
 
-    void SpawnCandy()
+    void SpawnCandy() // Eine Rakete wird an zufällig ausgewählten Orten gespawned
     {
         GameObject newBadCandy = Instantiate(candyBad, GetSpawnPoint(), Quaternion.identity);
         newBadCandy.transform.parent = canvas.transform;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

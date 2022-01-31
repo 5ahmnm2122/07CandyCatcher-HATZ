@@ -17,19 +17,16 @@ public class CandyCollision : MonoBehaviour
         score.text = "Eingesammelt: " + count.ToString();
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision) // Wenn ein Geldsack Iron Man berührt geht der Zähler 1 nach oben. Bei einer Berührung mit einer Rakete verschwindet einer der Arc-Reaktoren
     {
         if (collision.gameObject.tag == "Candy")
         {
-            Debug.Log("And that's the good trigger.");
             count++;
             score.text = "Eingesammelt: " + count.ToString();
         }
 
         if (collision.gameObject.tag == "Missile")
         {
-            Debug.Log("BOOM!");
-
             if (heartOne.activeSelf)
             {
                 heartOne.SetActive(false);
@@ -44,11 +41,5 @@ public class CandyCollision : MonoBehaviour
                 SceneManager.LoadScene("EndSceneLost");
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
