@@ -11,10 +11,7 @@ __DEVELOPMENT PLATFORM:__
 
 https://5ahmnm2122.github.io/07CandyCatcher-HATZ/
 
-__Software/Hardware Requirements:__
-=======
 __TARGET PLATFORM:__
->>>>>>> 0d707cb715cb310dde06edf5d7eb8bb802573beb
 
 - WebGL
 
